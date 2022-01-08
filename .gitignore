@@ -15,3 +15,5 @@ tags
 mruby/
 .*.sw?
 test_*
+mruby_config.rb.lock
+output/

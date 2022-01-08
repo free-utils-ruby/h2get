@@ -1,0 +1,4 @@
+[submodule "deps/mruby"]
+	path = deps/mruby
+	url = https://github.com/mruby/mruby.git
+	branch = stable

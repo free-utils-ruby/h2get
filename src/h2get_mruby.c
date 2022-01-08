@@ -414,6 +414,14 @@ static mrb_value h2get_mruby_send_data(mrb_state *mrb, mrb_value self)
     return mrb_nil_value();
 }
 
+static inline mrb_int
+mrb_ary_len(mrb_state *mrb, mrb_value ary)
+{
+  (void)mrb;
+  mrb_assert(mrb_array_p(ary));
+  return RARRAY_LEN(ary);
+}
+
 static mrb_value h2get_mruby_send_headers(mrb_state *mrb, mrb_value self)
 {
     struct h2get_mruby *h2g;
